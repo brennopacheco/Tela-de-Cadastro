@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+} 
+body{
+	background: linear-gradient(to left top, #796AD9, white);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 100%; 
+}
+.form{
+	overflow: hidden;
+	background: #bdedf257;
+	width: 50%;
+	height: 70%;
+	margin:50px auto ;
+	text-align: center;
+	border: 2px solid rgba(121, 106, 217, 0.384);
+	border-radius: 10px;
+}
+h1, h2{
+	color: #653BBF;
+}
+h3 {
+	color: #460fbd
+}
+input,select{
+	border-radius: 10px;
+	height: 30px;
+	border: none;
+	margin: 5px;
+}
+input[type="radio"]{
+	height: 12px;
+}
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+	height: 35px;
+}
+input[type="button"]{
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+	height: 35px;
+}
+input[type="submit"]:hover{
+	background: linear-gradient(to bottom, #796AD9, black);
+	color: #fff;
+}
+input[type="button"]:hover{
+	background: linear-gradient(to bottom, #796AD9, black);
+	color: #fff;
+}
+@media (max-width: 680px) {
+	.form { 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin-top: 0  ;
+	}
+	input, label{ 
+	margin: 5px;
+	}   
+}
